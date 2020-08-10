@@ -1,0 +1,23 @@
+[
+  {
+    "name":"personInfo",
+    "slotList":["person_name","person_property"],
+    "slotmap": {},
+    "Triggers":[],
+    "regex":"",
+    "sparql": "select distinct ?value where {<person_name> <person_property> ?value.}",
+    "param":["value"],
+    "info": "给出某人物的基本属性信息",
+    "reply": "<person_name>的<person_property>是#value。"
+  },{
+  "name":"eventInfo",
+  "slotList":["event_name","event_property"],
+  "slotmap": {},
+  "Triggers":[],
+  "regex":"",
+  "sparql": "select distinct ?value where {<event_name> <event_property> ?value.}",
+  "param":["value"],
+  "info": "给出某事件的基本属性信息",
+  "reply": "\"<event_name>\"的<event_property>是#value。"
+}
+]
